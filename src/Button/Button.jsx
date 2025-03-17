@@ -1,10 +1,14 @@
-import styles from './Button.module.css'
 
 function Button(){
 
+    const handleClick = () => {
+        alert("You clicked me");
+    }
+
+
     return(
-        <button className={styles.button}>Click me</button>
-    )
+        <button onClick={handleClick}>Click me smile</button>
+    );
 }
 
 export default Button
